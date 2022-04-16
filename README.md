@@ -9,5 +9,5 @@ From the project root directory, run the following commands
 ```
 cmake -S . -B build
 cmake --build build
-cd build && test_filter
+cd build && test_filters
 ```

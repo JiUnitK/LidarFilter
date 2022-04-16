@@ -18,19 +18,18 @@ enable_testing()
 
 include_directories(include)
 
-file(GLOB SOURCES src/*.cpp)
+file(GLOB SOURCES src/*.cpp tests/*.cpp)
 
 add_executable(
-  test_filter
+  test_filters
   ${SOURCES}
-  tests/test_filter.cpp
 )
 
 target_link_libraries(
-  test_filter
+  test_filters
   gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(test_filter)
+gtest_discover_tests(test_filters)
 
