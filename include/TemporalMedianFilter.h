@@ -3,7 +3,7 @@
 #include "Filter.h"
 #include <queue>
 
-class TemporalMedianFilter : Filter {
+class TemporalMedianFilter : public Filter {
 public:
     /** Initialize filter with specified limits
      *

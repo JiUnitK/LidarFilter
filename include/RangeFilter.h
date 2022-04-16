@@ -2,7 +2,7 @@
 
 #include "Filter.h"
 
-class RangeFilter : Filter {
+class RangeFilter : public Filter {
 public:
     /** Initialize filter with specified limits
      *
